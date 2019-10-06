@@ -1,0 +1,54 @@
+#skillsContainer img{
+  width: 5cm
+}
+
+svg {
+  width: 5cm
+}
+
+.colored{
+  font-size: 5cm
+}
+
+.imageAnimation { 
+  position: 100% 0px;
+  -webkit-animation: moveToLeft 10s linear infinite;
+  animation: moveToLeft 10s linear infinite;
+}
+
+.imageAnimation { 
+  position: relative;
+  left: 100%;
+  top: 0px;
+  -webkit-animation: moveToLeft 10s linear infinite;
+  animation: moveToLeft 10s linear infinite;
+}
+
+@-webkit-keyframes moveToLeft {
+  from {left: 100%;}
+  to {left: 0%;}
+}
+
+@keyframes moveToLeft {
+  from {left: 110%;}
+  to {left: -20%;}
+}
+
+.imageAnimationRigth { 
+  position: relative;
+  /* float: left; */
+  right: 100%;
+  top: 0px;
+  -webkit-animation: moveToRight 10s linear infinite;
+  animation: moveToRight 10s linear infinite;
+}
+
+@-webkit-keyframes moveToRight {
+  from {right: -20%;}
+  to {right: 110%;}
+}
+
+@keyframes moveToRight {
+  from {right: 100%;}
+  to {right: -10%;}
+}

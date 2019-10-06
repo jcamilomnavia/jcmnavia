@@ -2,6 +2,7 @@
   position: fixed;
   width: 100vw;
   z-index: 1;
+  transition: top 0.3s !important;
 }
 
 .logoNav{
@@ -35,6 +36,15 @@
 .navOptions{
   color: white;
   margin: auto
+}
+
+a {
+  color: white;
+}
+
+a:hover{
+  color: gray;
+  text-decoration: none
 }
 
 .navOptions span{

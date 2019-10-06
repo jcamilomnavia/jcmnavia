@@ -29,19 +29,6 @@ export default class About extends Component {
             <img src={profile} alt="profile" />
           </div>
         </div>
-        {/* <div id="AboutTitle">
-          <h1>About</h1>
-        </div>
-        <div id="InfoTitle">
-          <p>
-            I'm a 20 year old boy interested in always keep learning and improving myself to the next level. I like programming and I'm expecting to aquire
-            some experience soon and begin this adventure in the world of developing. Im a front-end React developer and also a Back-end developer, 
-            best known as a Full Stack Developer
-          </p>
-        </div>
-        <div id="Image">
-          <img src={profile} alt="profile" />
-        </div> */}
       </div>
     )
   }

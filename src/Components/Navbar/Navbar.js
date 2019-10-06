@@ -25,24 +25,26 @@ export default class Navbar extends Component {
     let currentScrollTop = window.pageYOffset
 
     if (currentScrollTop >= navHeigth) {
-      this.setState({ hidden: '' })
-    } else if (currentScrollTop < (navHeigth/2)){
-      this.setState({ hidden: 'none' })
+      this.setState({ hidden: 1 })
+    } else if (currentScrollTop < (navHeigth)){
+
+      this.setState({ hidden: (currentScrollTop/navHeigth) })
     }
   }
 
   render() {
     return (
       <div>
-        <nav style={{display: this.state.hidden}} className="navbar navbar-dark bg-primary personav">
+        <nav style={{opacity: this.state.hidden}} className="navbar navbar-dark bg-primary personav">
           {/* <span className="navbar-brand">Navbar</span> */}
           <i class="fa fa-code fa-2x logoNav"></i>
           <div className='navOptions'>
-            <span>Home</span>
-            <span>About</span>
-            <span>Skills</span>
-            <span>Education</span>
-            <span>Contact</span>
+            {/* eslint-disable-next-line */}
+            <span><a href='index.html#home' >Home</a></span>
+            <span><a href='index.html#about' >About</a></span>
+            <span><a href='index.html#skills' >Skills</a></span>
+            <span><a href='index.html#education' >Education</a></span>
+            <span><a href='index.html#contact' >Contact</a></span>
           </div>
           
           <ul className='persoNavIcon'>
