@@ -6,15 +6,19 @@ import profile from '../../assets/img/profile.jpg';
 export default class About extends Component {
   render () {
     return (
-      <div className="gridAbout">
-        <div className='row firstRow'>
-          <div className='col-sm'>
-            <h1 className='title'>About</h1>
+      <div className="aboutContent">
+
+        <div className='firstRow'>
+          <div className='title'>
+            <h1>About</h1>
           </div>
         </div>
-        <div className='row'>
-          <div className='col-sm'>
-            <p className='description'>
+
+        <div className='content'>
+
+          <div className='description'>
+
+            <p className=''>
             I’m a 20-year-old guy born in Colombia, always interested in learning and improving myself in every way.
             I’m a passionate person in what I do and always do my best.
             I’ve been always into computers and stuff, also reading books and articles. I really believe in self-taught learning, 
@@ -24,11 +28,15 @@ export default class About extends Component {
             I started some projects about a year ago as a Freelancer and now I’m looking forward to acquire
             more experience in the world of development with new technologies
             </p>
+            
           </div>
-          <div className='col-sm profilePic'>
+
+          <div className='profilePic'>
             <img src={profile} alt="profile" />
           </div>
+
         </div>
+
       </div>
     )
   }

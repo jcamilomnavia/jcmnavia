@@ -1,13 +1,14 @@
-.gridAbout{
-  margin-left: 0 !important;
-  margin-right: 0 !important;
+.aboutContent{
+  margin-left: 15% !important;  
+  margin-right: 15% !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
+  /* width: 100vw !important; */
+  height: 100vh !important;
 }
 
-.gridAbout {
-  width: 100vw !important;
-  height: 100vh !important;
+.firstRow{
+  margin-top: 56px !important;
 }
 
 .title {
@@ -20,25 +21,46 @@
   margin-top: 60px;
 }
 
-.firstRow{
-  margin-top: 56px !important;
+.content{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: stretch; */
+  /* float: left; */
+}
+
+
+.description{
+  width: 45%;
+  margin-right: 2%;
+  text-align: justify;
+  font-family: "Open Sans";
+  font-size: .5cm
 }
 
 .profilePic{
-  position: relative;
-  right: 0px;
+  width:50%;
+  /* min-width: 420px !important; */
 }
-.profilePic img{
+
+.profilePic > img{
   width: 100%;
-  float: right;
   border-radius: 1%;
   box-shadow: -7px 18px 30px -7px rgba(0,0,0,0.75);
 }
 
-.description{
-  margin-left: 15px;
-  margin-right: 10px;
-  text-align: justify;
-  font-family: "Open Sans";
-  font-size: .6cm
+@media screen and (max-width: 1092px){
+  .description{
+    width: 100%;
+  }
+
+  .profilePic{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 479px){
+  .aboutContent{
+    height: fit-content !important;
+  }
 }

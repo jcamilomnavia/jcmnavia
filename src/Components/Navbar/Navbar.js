@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import './Navbar.css'
 
 export default class Navbar extends Component {
-  state = { hidden: 'none' };
+  state = { hidden: 0 };
 
   constructor(props) {
     super(props);
@@ -26,25 +26,42 @@ export default class Navbar extends Component {
 
     if (currentScrollTop >= navHeigth) {
       this.setState({ hidden: 1 })
+    } else if (currentScrollTop === 0){
+      this.setState({ hidden: (0) })
     } else if (currentScrollTop < (navHeigth)){
-
       this.setState({ hidden: (currentScrollTop/navHeigth) })
+    }
+  }
+
+  toggleNavBar() {
+    let navbar = document.getElementById('nav-icon3')
+    let dropdown = document.getElementById('mobileNavContent')
+    if (navbar.className.includes('open')){
+      navbar.classList.remove('open')
+      dropdown.classList.remove('show')
+    } else {
+      navbar.classList.add('open')
+      dropdown.classList.add('show')
     }
   }
 
   render() {
     return (
       <div>
-        <nav style={{opacity: this.state.hidden}} className="navbar navbar-dark bg-primary personav">
+        <nav style={{opacity: this.state.hidden}} className="navbar navbar-dark bg-primary desktopNav">
           {/* <span className="navbar-brand">Navbar</span> */}
           <i class="fa fa-code fa-2x logoNav"></i>
           <div className='navOptions'>
             {/* eslint-disable-next-line */}
             <span><a href='index.html#home' >Home</a></span>
-            <span><a href='index.html#about' >About</a></span>
-            <span><a href='index.html#skills' >Skills</a></span>
-            <span><a href='index.html#education' >Education</a></span>
-            <span><a href='index.html#contact' >Contact</a></span>
+              {/* eslint-disable-next-line */}
+              <span><a href='index.html#about' >About</a></span>
+              {/* eslint-disable-next-line */}
+              <span><a href='index.html#skills' >Skills</a></span>
+              {/* eslint-disable-next-line */}
+              <span><a href='index.html#education' >Education</a></span>
+              {/* eslint-disable-next-line */}
+              <span><a href='index.html#contact' >Contact</a></span>
           </div>
           
           <ul className='persoNavIcon'>
@@ -65,6 +82,33 @@ export default class Navbar extends Component {
             </li>
           </ul>
         </nav>
+
+        <div>
+          <nav style={{ opacity: this.state.hidden }} className="navbar navbar-dark bg-primary mobileNav">
+            <i class="fa fa-code fa-2x logoNav"></i>
+            <div id="nav-icon3" onClick={this.toggleNavBar}>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </nav>
+          <div id='mobileNavContent'>
+            <div className='mobileContent'>
+              {/* eslint-disable-next-line */}
+              <span><a href='index.html#home' >Home</a></span>
+              {/* eslint-disable-next-line */}
+              <span><a href='index.html#about' >About</a></span>
+              {/* eslint-disable-next-line */}
+              <span><a href='index.html#skills' >Skills</a></span>
+              {/* eslint-disable-next-line */}
+              <span><a href='index.html#education' >Education</a></span>
+              {/* eslint-disable-next-line */}
+              <span><a href='index.html#contact' >Contact</a></span>
+            </div>
+          </div>
+        </div>
+        
       </div>
     )
   }

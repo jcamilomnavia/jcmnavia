@@ -1,6 +1,6 @@
 .App{
   overflow-x: hidden;
-  overflow-y: auto;
+  /* overflow-y: auto; */
   /* scrollbar-width: none; */
 }
 
