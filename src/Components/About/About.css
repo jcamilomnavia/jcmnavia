@@ -4,21 +4,27 @@
   padding-left: 0 !important;
   padding-right: 0 !important;
   /* width: 100vw !important; */
-  height: 100vh !important;
+  /* height: 100vh !important; */
 }
 
 .firstRow{
-  margin-top: 56px !important;
+  /* font-size: 18px !important; */
+  margin-top: 100px !important;
+  margin-bottom: 70px;
 }
 
 .title {
   color: gray;
-  font-size: 1cm;
+  font-size: 2cm;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 500;
   margin-left: 60px;
   margin-top: 60px;
+}
+
+.title > h1 {
+  font-size: 1.5cm;
 }
 
 .content{

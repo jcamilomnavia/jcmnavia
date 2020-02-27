@@ -1,5 +1,27 @@
-#skillsContainer img{
-  width: 5cm
+.skillsContent{
+  margin-left: 15% !important;  
+  margin-right: 15% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.skillsImageContainer{
+  height: max-content;
+  display: flex;
+  justify-content: center;
+
+}
+
+.skillsImage {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skillsImage > img{
+  width: 3cm;
+  margin-bottom: 50px;
 }
 
 svg {
@@ -10,7 +32,7 @@ svg {
   font-size: 5cm
 }
 
-.imageAnimation { 
+/* .imageAnimation { 
   position: 100% 0px;
   -webkit-animation: moveToLeft 10s linear infinite;
   animation: moveToLeft 10s linear infinite;
@@ -22,7 +44,7 @@ svg {
   top: 0px;
   -webkit-animation: moveToLeft 10s linear infinite;
   animation: moveToLeft 10s linear infinite;
-}
+} */
 
 @-webkit-keyframes moveToLeft {
   from {left: 100%;}
@@ -34,14 +56,13 @@ svg {
   to {left: -20%;}
 }
 
-.imageAnimationRigth { 
+/* .imageAnimationRigth { 
   position: relative;
-  /* float: left; */
   right: 100%;
   top: 0px;
   -webkit-animation: moveToRight 10s linear infinite;
   animation: moveToRight 10s linear infinite;
-}
+} */
 
 @-webkit-keyframes moveToRight {
   from {right: -20%;}

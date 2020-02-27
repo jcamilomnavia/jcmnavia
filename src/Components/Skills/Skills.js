@@ -3,6 +3,7 @@ import './Skills.css'
 
 import awsLogo from '../../assets/svg/aws.svg'
 import gitLogo from '../../assets/svg/git.svg'
+import graphqlLogo from '../../assets/svg/graphql.png'
 import cssLogo from '../../assets/svg/css.svg'
 import htmlLogo from '../../assets/svg/html.svg'
 import jsLogo from '../../assets/svg/js.svg'
@@ -17,34 +18,57 @@ import bootstrapLogo from '../../assets/svg/bootstrap.svg'
 export default class Skills extends Component {
   render() {
     return (
-      <div className="gridAbout">
-        <div className='row firstRow'>
-          <div className='col-sm'>
-            <h1 className='title'>Skills</h1>
+      <div className="skillsContent">
+        <div className='firstRow'>
+          <div className='title'>
+            <h1 className=''>Skills</h1>
           </div>
         </div>
-        <div className='row'>
-          <div id='skillsContainer' className='col-sm'>
-            <p className='description'>
-            <div className='imageAnimation'>
-              <img src={nodeLogo} alt='node' />
-              <img src={dockerLogo} alt='docker' />
-              <img src={mongoLogo} alt='mongo' />
-              <img src={jsLogo} alt='node' />
-              <img  src={gitLogo} alt='docker' />
-            </div>
-            <div className='imageAnimationRigth'>
+
+        <section>
+          <h2>Programming Languages</h2>
+          <ul>
+            <li>
+            Javascript
+            </li>
+            <li>
+              Java
+            </li>
+            <li>
+              Python
+            </li>
+            <li>
+              PHP
+            </li>
+            <li>
+              C++
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Techonologies</h2>
+          <div className='skillsImageContainer'>
+            <div class="skillsImage">
               <img src={reactLogo} alt='node' />
-              <img src={htmlLogo} alt='node' />
-              <img src={cssLogo} alt='node' />
-              <img src={bootstrapLogo} alt='docker' />
+              <img src={nodeLogo} alt='node' />
+              <img src={mongoLogo} alt='mongo' />
+              <img src={graphqlLogo} alt='graphql' />
+              <img src={dockerLogo} alt='docker' />
+            </div>
+          </div>
+          <div className='skillsImageContainer'>
+            <div class="skillsImage">
+              <img src={gitLogo} alt='docker' />
               <img src={awsLogo} alt='docker' />
               <img src={linuxLogo} alt='docker' />
+              <img src={htmlLogo} alt='node' />
+              <img src={cssLogo} alt='node' />
             </div>
-              
-            </p>
           </div>
-        </div>
+        </section>
+        
+        
       </div>
     )
   }
