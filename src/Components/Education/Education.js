@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import './Education.css'
 
 
-export default class About extends Component {
+export default class Education extends Component {
   render () {
     return (
       <div id='education' className="educationContent">
