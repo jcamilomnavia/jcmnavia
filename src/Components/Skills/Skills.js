@@ -3,7 +3,7 @@ import './Skills.css'
 
 import awsLogo from '../../assets/svg/aws.svg'
 import gitLogo from '../../assets/svg/git.svg'
-import graphqlLogo from '../../assets/svg/graphql.png'
+import graphqlLogo from '../../assets/svg/graphql.svg'
 import cssLogo from '../../assets/svg/css.svg'
 import htmlLogo from '../../assets/svg/html.svg'
 import linuxLogo from '../../assets/svg/linux.svg'
