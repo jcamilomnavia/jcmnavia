@@ -1,10 +1,8 @@
 .App{
   overflow-x: hidden;
-  /* overflow-y: auto; */
-  /* scrollbar-width: none; */
+  font-family: Roboto;
 }
 
 ::-webkit-scrollbar {
   display: none;
-  /* scrollbar-width: none; */
 }

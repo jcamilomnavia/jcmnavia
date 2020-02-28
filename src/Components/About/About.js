@@ -6,7 +6,7 @@ import profile from '../../assets/img/profile.jpg';
 export default class About extends Component {
   render () {
     return (
-      <div className="aboutContent">
+      <div id='about' className="aboutContent">
 
         <div className='firstRow'>
           <div className='title'>
@@ -18,7 +18,7 @@ export default class About extends Component {
 
           <div className='description'>
 
-            <p className=''>
+            <p className='descriptionText'>
             I’m a 20-year-old guy born in Colombia, always interested in learning and improving myself in every way.
             I’m a passionate person in what I do and always do my best.
             I’ve been always into computers and stuff, also reading books and articles. I really believe in self-taught learning, 

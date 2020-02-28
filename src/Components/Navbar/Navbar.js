@@ -50,18 +50,20 @@ export default class Navbar extends Component {
       <div>
         <nav style={{opacity: this.state.hidden}} className="navbar navbar-dark bg-primary desktopNav">
           {/* <span className="navbar-brand">Navbar</span> */}
-          <i class="fa fa-code fa-2x logoNav"></i>
+          <i className="fa fa-code fa-2x logoNav"></i>
           <div className='navOptions'>
             {/* eslint-disable-next-line */}
-            <span><a href='index.html#home' >Home</a></span>
+            <span><a href='#home' >Home</a></span>
               {/* eslint-disable-next-line */}
-              <span><a href='index.html#about' >About</a></span>
+              <span><a href='#about' >About</a></span>
               {/* eslint-disable-next-line */}
-              <span><a href='index.html#skills' >Skills</a></span>
+              <span><a href='#skills' >Skills</a></span>
               {/* eslint-disable-next-line */}
-              <span><a href='index.html#education' >Education</a></span>
+              <span><a href='#education' >Education</a></span>
               {/* eslint-disable-next-line */}
-              <span><a href='index.html#contact' >Contact</a></span>
+              <span><a href='#portfolio' >Portfolio</a></span>
+              {/* eslint-disable-next-line */}
+              <span><a href='#contact' >Contact</a></span>
           </div>
           
           <ul className='persoNavIcon'>
@@ -85,7 +87,7 @@ export default class Navbar extends Component {
 
         <div>
           <nav style={{ opacity: this.state.hidden }} className="navbar navbar-dark bg-primary mobileNav">
-            <i class="fa fa-code fa-2x logoNav"></i>
+            <i className="fa fa-code fa-2x logoNav"></i>
             <div id="nav-icon3" onClick={this.toggleNavBar}>
               <span></span>
               <span></span>

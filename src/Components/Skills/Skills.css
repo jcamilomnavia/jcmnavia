@@ -1,3 +1,7 @@
+.subtitle{
+  color: gray;
+}
+
 .skillsContent{
   margin-left: 15% !important;  
   margin-right: 15% !important;
@@ -72,4 +76,35 @@ svg {
 @keyframes moveToRight {
   from {right: 100%;}
   to {right: -10%;}
+}
+
+.dotContainer{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.dot {
+  height: 200px;
+  width: 200px;
+  background-color: #A5D7F1 ;
+  border-radius: 50%;
+  text-align: center;
+  display: table;
+  margin-bottom: 30px;
+}
+
+.dotText {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+.dotTitle{
+  font-size: 25px;
+  font-weight: 500;
 }

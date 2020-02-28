@@ -5,7 +5,7 @@ export default class Home extends Component {
   
   render () {
     return (
-      <div className="containerHome">
+      <div id='home' className="containerHome">
         {/* <img alt='home' src={logo} className='parallaxImg' /> */}
         {/* <div className='parallaxImg'/> */}
         <div className="gridHome row">

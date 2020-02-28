@@ -1,0 +1,43 @@
+.educationContent{
+  margin-left: 15% !important;  
+  margin-right: 15% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+
+.degrees{
+  vertical-align: middle;
+  float:right;
+  width: 100%;
+}
+
+.contentDegree{
+  /* display: inline-flex; */
+  width: 100%;
+  /* height: fit-content; */
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border:none;
+  background: #E2E2E2;
+  border-radius: 20px;
+  
+  font-weight: 300;
+  font-size: 24px !important;
+  line-height: 28px;
+
+  color: #888484;
+
+  /* margin-left:8px; */
+}
+
+.titleUni{
+  display: inline;
+}
+.spanDate {
+  float: right !important;
+  right: 0;
+}
