@@ -1,0 +1,14 @@
+.main-education {
+  background-color: $colorDefault;
+  &__title {
+    @include fonts($colorWhite, $fontBold, 36);
+    line-height: rem(40);
+  }
+
+  &-item {
+    background-color: $colorDefaultLight;
+    border-radius: 10px;
+    @include fonts($colorWhite, $fontRegular, 16);
+    line-height: rem(22);
+  }
+}

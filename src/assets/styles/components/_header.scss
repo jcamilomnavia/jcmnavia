@@ -1,0 +1,64 @@
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+  background-color: transparent;
+  backdrop-filter: blur(30px);
+
+  &.scrolled {
+    background-color: $colorDefault;
+    .main-navbar {
+      &--nav {
+        .nav-item,
+        .nav-link {
+          color: $colorWhite !important;
+        }
+      }
+      .main-button {
+        background-color: $colorDefaultButton;
+        color: $colorDefault !important;
+      }
+    }
+  }
+}
+
+.main-navbar {
+  .navbar-collapse {
+    height: 100vh;
+  }
+  &--toggler {
+    border: none !important;
+    &:focus {
+      outline: 0;
+    }
+  }
+  &--nav {
+    .nav-item {
+      @include fonts($colorDark, $fontRegular, 14);
+      cursor: pointer !important;
+      position: relative;
+      transition: all 0.3s ease-in-out;
+      text-align: right;
+      &:before {
+        border-bottom: 1px solid $colorDefault;
+        bottom: 0;
+        content: '';
+        left: 0;
+        position: absolute;
+        transition: all 0.15s linear;
+        width: 0;
+      }
+      &:hover {
+        color: $colorDefault !important;
+        &:before {
+          width: 100%;
+        }
+      }
+      .nav-link {
+        padding: 0;
+      }
+    }
+  }
+}

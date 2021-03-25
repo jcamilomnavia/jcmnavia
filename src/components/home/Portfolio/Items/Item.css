@@ -1,0 +1,56 @@
+.projects{
+  /* vertical-align: middle; */
+  /* float:right; */
+  /* width: 100%; */
+  margin-right: 10px;
+  margin-bottom: 20px;
+
+  /* display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; */
+}
+
+.contentProject{
+  margin-right: 10px;
+  margin-bottom: 20px;
+
+  width: 340px;
+  padding: 2%;
+  border:none;
+  background: #E2E2E2;
+  border-radius: 20px;
+  
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #888484;
+
+  
+}
+
+.projectImg{
+  width: 100%;
+  border-radius: 20px;
+}
+
+.nameProject{
+  padding-top: 5px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.superDescription{
+  /* display: table; */
+  /* vertical-align: middle; */
+  display: flex;
+  flex-flow: column;
+}
+
+.descriptionProject{
+  padding-top: 15px;
+  text-align: justify;
+  line-height: 21px;
+  font-size: 18px !important;
+}

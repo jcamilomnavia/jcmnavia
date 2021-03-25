@@ -1,0 +1,27 @@
+// EXTERNAL
+@import '~bootstrap/scss/bootstrap';
+@import '~normalize.css/normalize.css';
+@import '~animate.css/animate.css';
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+// CONFIG
+@import 'modules/_vars.scss';
+
+// CONFIG MODULES
+@import 'modules/position';
+@import 'modules/typography';
+@import 'modules/app';
+
+// COMPONENTS
+@import 'components/header';
+@import 'components/footer';
+@import 'components/main';
+@import 'components/ui';
+@import 'components/hero';
+@import 'components/about';
+@import 'components/skills';
+@import 'components/education';
+
+// BREAKPOINTS
+@import 'modules/breakpoints';

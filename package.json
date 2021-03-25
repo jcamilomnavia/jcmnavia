@@ -1,42 +1,59 @@
 {
-  "name": "portfolio",
-  "version": "0.1.0",
+  "name": "jcamilomnvia-portfolio",
   "private": true,
-  "homepage": "https://jcamilomnavia.github.io/",
+  "description": "Juan Camilo Marin Navia Portfolio",
+  "version": "0.1.0",
+  "author": "Juan Camilo Marin <jcmnavia@hotmail.com>",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.27",
-    "@fortawesome/free-regular-svg-icons": "^5.12.1",
-    "@fortawesome/free-solid-svg-icons": "^5.12.1",
-    "@fortawesome/react-fontawesome": "^0.1.8",
-    "bootstrap": "^4.4.1",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "react-scripts": "3.1.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "@react-hook/media-query": "^1.1.1",
+    "animate.css": "^4.1.1",
+    "bootstrap": "^4.6.0",
+    "classnames": "^2.2.6",
+    "dotenv": "^8.2.0",
+    "gatsby": "^3.0.4",
+    "gatsby-image": "^3.0.0",
+    "gatsby-plugin-manifest": "^3.0.0",
+    "gatsby-plugin-offline": "^4.0.0",
+    "gatsby-plugin-react-helmet": "^4.0.0",
+    "gatsby-plugin-sass": "^4.0.2",
+    "gatsby-plugin-sharp": "^3.0.1",
+    "gatsby-source-filesystem": "^3.0.0",
+    "gatsby-transformer-sharp": "^3.0.0",
+    "node-sass": "^5.0.0",
+    "normalize.css": "^8.0.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-particle-animation": "^1.0.1",
+    "react-slick": "^0.28.1",
+    "reactstrap": "^8.9.0",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0"
+    "prettier": "2.2.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }

@@ -1,0 +1,38 @@
+.main-button {
+  border: none;
+  border-radius: 5px !important;
+  text-transform: capitalize;
+  padding: 5px 20px;
+  font-size: rem(14);
+  font-family: $fontRegular;
+
+  &.default {
+    color: $colorWhite !important;
+    background-color: $colorDefault;
+    &:hover {
+      background-color: $colorDefaultLight;
+    }
+  }
+
+  &.outline-default {
+    background-color: transparent;
+    border: 1px solid $colorDefault;
+    color: $colorDefault !important;
+    &:hover {
+      background-color: $colorDefault;
+      color: $colorWhite !important;
+    }
+  }
+
+  &.outline-dark {
+    background-color: transparent;
+    border: 1px solid $colorDark;
+    color: $colorDark;
+  }
+
+  &.outline-white {
+    background-color: transparent;
+    border: 1px solid $colorWhite;
+    color: $colorWhite;
+  }
+}

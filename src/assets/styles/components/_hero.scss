@@ -1,0 +1,25 @@
+.main-hero {
+  height: 100vh;
+  &__container {
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    z-index: 2;
+    top: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  &__title {
+    @include fonts($colorWhite, $fontRegular, 38);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: rem(44);
+  }
+  &__subtitle {
+    @include fonts($colorWhite, $fontSemiBold, 22);
+    line-height: rem(26);
+  }
+}
