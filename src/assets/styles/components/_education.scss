@@ -1,8 +1,8 @@
 .main-education {
   background-color: $colorDefault;
   &__title {
-    @include fonts($colorWhite, $fontBold, 36);
-    line-height: rem(40);
+    @include fonts($colorWhite, $fontBold, 90);
+    line-height: rem(65);
   }
 
   &-item {
@@ -11,4 +11,45 @@
     @include fonts($colorWhite, $fontRegular, 16);
     line-height: rem(22);
   }
+  &__list{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    li{
+      background-color: rgba(214, 214, 214, 0.5);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      cursor: pointer;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+      
+      .avatar {
+        width: 40px;
+        height: 40px;
+        background-color: #666;
+        border-radius: 20px;
+      }
+      
+      .row-example {
+        width: 100%;
+        height: 8px;
+        background-color: #999;
+        border-radius: 10px;
+        margin-top: 12px;
+      }
+    }
+  }
+}
+
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }

@@ -13,6 +13,7 @@ import dockerLogo from 'assets/images/svg/docker.svg'
 import nodeLogo from 'assets/images/svg/nodejs.svg'
 import reactLogo from 'assets/images/svg/react.svg'
 import mongoLogo from 'assets/images/svg/mongo.svg'
+import { AppleWatchDock } from '../../../ui/apple-watch-layout'
 
 const Skills = () => {
   const settings = {
@@ -28,13 +29,16 @@ const Skills = () => {
   return (
     <section id="skills" className="main-skills py-5">
       <Container>
-        <Row className="mx-0">
+        <Row className="mx-0 mt-5">
           <Col>
-            <h2 className="main-skills__title">Skills</h2>
+            <h2 className="main-skills__title">An Amazing Series of SKILLS</h2>
           </Col>
         </Row>
+        </Container>
 
-        <Row className="justify-content-center mx-0 my-4">
+        <AppleWatchDock />
+
+        {/* <Row className="justify-content-center mx-0 my-4">
           <Col xs={12} className="mb-3">
             <h3 className="main-skills__subtitle">Programming Languages</h3>
           </Col>
@@ -110,8 +114,7 @@ const Skills = () => {
               />
             </Slider>
           </Col>
-        </Row>
-      </Container>
+        </Row> */}
     </section>
   )
 }

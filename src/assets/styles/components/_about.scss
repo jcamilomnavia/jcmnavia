@@ -1,8 +1,8 @@
 .main-about {
   background-color: $colorDefaultText;
   &__title {
-    @include fonts($colorDark, $fontBold, 36);
-    line-height: rem(40);
+    @include fonts($colorDark, $fontBold, 90);
+    line-height: rem(65);
   }
   &__description {
     @include fonts($colorDark, $fontRegular, 16);

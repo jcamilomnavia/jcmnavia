@@ -1,7 +1,8 @@
 .main-skills {
+  background-color: black;
   &__title {
-    @include fonts($colorDark, $fontBold, 36);
-    line-height: rem(40);
+    @include fonts($colorWhite, $fontExtraBold, 90);
+    line-height: rem(100);
   }
   &__subtitle {
     @include fonts($colorDark, $fontSemiBold, 24);

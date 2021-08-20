@@ -1,17 +1,20 @@
 import React from 'react'
 import { Col, Row, Container } from 'reactstrap'
+import Accordeon from '../../../ui/accordeon'
 
 const Education = () => {
   return (
     <section id="education" className="main-education py-5">
       <Container>
-        <Row className="mx-0">
+        <Row className="mx-0 mt-5 mb-3">
           <Col xs={12}>
-            <h2 className="main-education__title">Education</h2>
+            <h2 className="main-education__title">Training Courts</h2>
           </Col>
         </Row>
 
-        <Row className="mx-0">
+        <Accordeon />
+
+        {/* <Row className="mx-0">
           <Col xs={12} className="main-education-item p-4  my-2">
             <h4 className="main-education-item__title">EAFIT University</h4>
             <p className="float-right">Graduation date: July 2021</p>
@@ -32,7 +35,7 @@ const Education = () => {
               Project Management, Web Project
             </span>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </section>
   )

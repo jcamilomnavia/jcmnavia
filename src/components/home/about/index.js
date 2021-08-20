@@ -4,11 +4,11 @@ import { Row, Col, Container } from 'reactstrap'
 const About = () => {
   return (
     <section id="about" className="main-about py-5">
-      <Container>
+      <Container className='my-5'>
         <Row className="mx-0">
           <Col xs={12} lg={6}>
             <article>
-              <h2 className="main-about__title">About</h2>
+              <h2 className="main-about__title">Believe it or not</h2>
               <p className="main-about__description">
                 I’m a 20-year-old guy born in Colombia, always interested in
                 learning and improving myself in every way. I’m a passionate
