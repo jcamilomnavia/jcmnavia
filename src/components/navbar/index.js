@@ -63,7 +63,7 @@ const NavbarPremier = () => {
             </Nav>
             <NavbarText className="px-0 px-md-3 d-block d-lg-inline text-right">
               <Link
-                to={`tel:+573003453662`}
+                to="tel:+573003453662"
                 className="btn main-button default m-auto text-right"
               >
                 +57 (300) 345-3662

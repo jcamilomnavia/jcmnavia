@@ -25,7 +25,7 @@ function SEO({ lang = 'en', meta = [], data }) {
       htmlAttributes={{
         lang,
       }}
-      title={'Juan Camilo Marin Navia'}
+      title="Juan Camilo Marin Navia"
       titleTemplate={title ? `${title} | %s` : 'Juan Camilo Marin Navia'}
       meta={[
         {

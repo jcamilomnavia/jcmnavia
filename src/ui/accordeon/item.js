@@ -1,6 +1,5 @@
-
-import React, {useState} from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React, { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 
 function Content() {
   return (
@@ -14,21 +13,18 @@ function Content() {
       <div className="row-example" />
       <div className="row-example" />
     </motion.div>
-  );
+  )
 }
 
 const Item = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleOpen = () => setIsOpen(!isOpen);
-  console.log(isOpen);
+  const [isOpen, setIsOpen] = useState(false)
+  const toggleOpen = () => setIsOpen(!isOpen)
   return (
     <motion.li layout onClick={toggleOpen} initial={{ borderRadius: 10 }}>
       <motion.div className="avatar" layout />
       <AnimatePresence>{isOpen && <Content />}</AnimatePresence>
     </motion.li>
-  );
+  )
 }
 
-
-
-export default Item;
+export default Item

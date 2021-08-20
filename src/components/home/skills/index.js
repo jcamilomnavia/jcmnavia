@@ -1,7 +1,6 @@
 import React from 'react'
 import { Container, Row, Col } from 'reactstrap'
 import Slider from 'react-slick'
-import Language from './languages'
 
 import awsLogo from 'assets/images/svg/aws.svg'
 import gitLogo from 'assets/images/svg/git.svg'
@@ -13,6 +12,7 @@ import dockerLogo from 'assets/images/svg/docker.svg'
 import nodeLogo from 'assets/images/svg/nodejs.svg'
 import reactLogo from 'assets/images/svg/react.svg'
 import mongoLogo from 'assets/images/svg/mongo.svg'
+import Language from './languages'
 import { AppleWatchDock } from '../../../ui/apple-watch-layout'
 
 const Skills = () => {
@@ -34,11 +34,11 @@ const Skills = () => {
             <h2 className="main-skills__title">An Amazing Series of SKILLS</h2>
           </Col>
         </Row>
-        </Container>
+      </Container>
 
-        <AppleWatchDock />
+      <AppleWatchDock />
 
-        {/* <Row className="justify-content-center mx-0 my-4">
+      {/* <Row className="justify-content-center mx-0 my-4">
           <Col xs={12} className="mb-3">
             <h3 className="main-skills__subtitle">Programming Languages</h3>
           </Col>

@@ -4,7 +4,7 @@ import { Row, Col, Container } from 'reactstrap'
 const About = () => {
   return (
     <section id="about" className="main-about py-5">
-      <Container className='my-5'>
+      <Container className="my-5">
         <Row className="mx-0">
           <Col xs={12} lg={6}>
             <article>
