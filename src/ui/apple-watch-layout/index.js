@@ -32,7 +32,8 @@ const images = [
 ]
 
 const AppleWatchDock = () => {
-  const width = document.body.clientWidth
+  const isBrowser = typeof document !== 'undefined'
+  const width = isBrowser && document.body.clientWidth
   const rows = Math.floor(500 / icon.size) * 2
   const cols = Math.floor(width / icon.size) * 2
   const grid = new Array(rows).fill([...Array(cols).keys()])

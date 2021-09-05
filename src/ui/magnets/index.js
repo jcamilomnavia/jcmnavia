@@ -1,9 +1,10 @@
 import React, { useRef, useEffect } from 'react'
-import { motion, useMotionValue, transform, useAnimation } from 'framer-motion'
+import { motion, useMotionValue, useAnimation } from 'framer-motion'
 import Box from './box'
 
-const width = window.innerWidth
-const height = window.innerHeight
+const isBrowser = typeof window !== 'undefined'
+const width = isBrowser && window.innerWidth
+const height = isBrowser && window.innerHeight
 const containerSize = width
 const containerSizeHeight = height
 const boxSize = 100

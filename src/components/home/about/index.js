@@ -4,7 +4,8 @@ import { motion, useTransform, useViewportScroll } from 'framer-motion'
 
 const About = () => {
   const { scrollY } = useViewportScroll()
-  const viewport = window.innerHeight
+  const isBrowser = typeof window !== 'undefined'
+  const viewport = isBrowser && window.innerHeight
   const opacity = useTransform(
     scrollY,
     [0, viewport, viewport * 2],

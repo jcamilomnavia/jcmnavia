@@ -13,7 +13,7 @@ import {
 import classnames from 'classnames'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
-const NavbarPremier = () => {
+const NavbarCustom = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
@@ -76,4 +76,4 @@ const NavbarPremier = () => {
   )
 }
 
-export default NavbarPremier
+export default NavbarCustom

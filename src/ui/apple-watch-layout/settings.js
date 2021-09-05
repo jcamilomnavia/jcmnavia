@@ -3,7 +3,9 @@ export const icon = {
   size: 130,
 }
 
-const width = document.body.clientWidth
+const isBrowser = typeof document !== 'undefined'
+
+const width = isBrowser && document.body.clientWidth
 export const device = {
   width: width + 20,
   height: 500,
