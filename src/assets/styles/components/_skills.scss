@@ -8,6 +8,9 @@
     @include fonts($colorDark, $fontSemiBold, 24);
     line-height: rem(40);
   }
+  &__image {
+    pointer-events: none;
+  }
   &-language {
     &__container {
       display: flex;
