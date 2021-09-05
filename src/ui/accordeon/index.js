@@ -2,7 +2,7 @@ import React from 'react'
 import { motion, AnimateSharedLayout } from 'framer-motion'
 import Item from './item'
 
-export default function Accordeon() {
+const Accordeon = () => {
   const items = [
     {
       university: 'EAFIT University',
@@ -36,3 +36,5 @@ export default function Accordeon() {
     </AnimateSharedLayout>
   )
 }
+
+export default Accordeon

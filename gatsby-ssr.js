@@ -2,7 +2,12 @@
 /* eslint-disable react/display-name */
 /* eslint-disable react/prop-types */
 const React = require('react')
+const { AnimatePresence } = require('framer-motion')
 
 exports.wrapPageElement = ({ element, props }) => {
-  return <div {...props}>{element}</div>
+  return (
+    <AnimatePresence>
+      <div {...props}>{element}</div>
+    </AnimatePresence>
+  )
 }

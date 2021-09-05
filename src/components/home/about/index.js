@@ -1,11 +1,11 @@
 import React from 'react'
 import { Row, Col, Container } from 'reactstrap'
 import { motion, useTransform, useViewportScroll } from 'framer-motion'
+import { isWindow } from '../../../utils/isBrowser'
 
 const About = () => {
   const { scrollY } = useViewportScroll()
-  const isBrowser = typeof window !== 'undefined'
-  const viewport = isBrowser && window.innerHeight
+  const viewport = isWindow() && window.innerHeight
   const opacity = useTransform(
     scrollY,
     [0, viewport, viewport * 2],

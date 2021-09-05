@@ -57,7 +57,7 @@
     "lint": "eslint . --ext .js,.jsx,.ts,tsx",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
+    "deploy": "gh-pages -b master -d public"
   },
   "repository": {
     "type": "git",

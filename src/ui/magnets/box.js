@@ -1,5 +1,12 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable react/prop-types */
 import React, { useEffect } from 'react'
 import { motion, useMotionValue, transform } from 'framer-motion'
+
+function calcAngle(top, left, cursorTop, cursorLeft) {
+  const angle = Math.atan2(cursorTop - left, cursorLeft - top) * (180 / Math.PI)
+  return angle < 0 ? -(angle + 540) : -(angle + 180)
+}
 
 const Box = ({ x, y, row, column, size, container, styles }) => {
   const top = column * size
@@ -58,11 +65,6 @@ const Box = ({ x, y, row, column, size, container, styles }) => {
       }}
     />
   )
-}
-
-function calcAngle(top, left, cursorTop, cursorLeft) {
-  const angle = Math.atan2(cursorTop - left, cursorLeft - top) * (180 / Math.PI)
-  return angle < 0 ? -(angle + 540) : -(angle + 180)
 }
 
 export default Box

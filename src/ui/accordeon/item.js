@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
-function Content({ title, university, location, eyebrow, extra, courses }) {
+const Content = ({ title, university, location, eyebrow, extra, courses }) => {
   return (
     <motion.div
       layout

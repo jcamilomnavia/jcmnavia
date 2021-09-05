@@ -2,6 +2,7 @@ import React from 'react'
 import { motion, useMotionValue } from 'framer-motion'
 import Item from './item'
 import { icon } from './settings'
+import { isDocument } from '../../utils/isBrowser'
 
 const images = [
   'aws',
@@ -32,8 +33,7 @@ const images = [
 ]
 
 const AppleWatchDock = () => {
-  const isBrowser = typeof document !== 'undefined'
-  const width = isBrowser && document.body.clientWidth
+  const width = isDocument() && document.body.clientWidth
   const rows = Math.floor(500 / icon.size) * 2
   const cols = Math.floor(width / icon.size) * 2
   const grid = new Array(rows).fill([...Array(cols).keys()])
