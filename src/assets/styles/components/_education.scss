@@ -1,0 +1,77 @@
+.main-education {
+  background-color: $colorDefault;
+  &__title {
+    @include fonts($colorWhite, $fontBold, 90);
+    line-height: rem(65);
+  }
+
+  &__card {
+    position: relative;
+  }
+  &__arrow {
+    width: 30px;
+    position: absolute;
+    right: 10px;
+    margin: auto;
+    top: 50%;
+    margin-top: -10px;
+  }
+  &__item {
+    &-title {
+      @include fonts($colorDefault, $fontLight, 22);
+      line-height: rem(22);
+      margin: 0;
+    }
+    &-university {
+      @include fonts($colorDefault, $fontSemiBold, 30);
+      line-height: rem(22);
+      margin-bottom: 10px;
+    }
+    &-location {
+      @include fonts($colorDefault, $fontBold, 18);
+      line-height: rem(22);
+      display: inline-block;
+    }
+    &-eyebrow {
+      @include fonts($colorDefault, $fontSemiBold, 18);
+      line-height: rem(22);
+      display: inline-block;
+    }
+    &-extra {
+      @include fonts($colorDefault, $fontRegular, 18);
+      font-style: italic;
+      line-height: rem(22);
+      display: inline-block;
+    }
+    &-courses {
+      @include fonts($colorDefault, $fontRegular, 18);
+      line-height: rem(22);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    li {
+      background-color: rgba(214, 214, 214, 0.5);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      cursor: pointer;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

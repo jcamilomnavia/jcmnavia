@@ -1,0 +1,47 @@
+.main-hero {
+  height: 100vh;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 0px;
+    grid-auto-rows: 400px;
+    grid-template-areas:
+      '. a a a a a .'
+      '. a a a a a .';
+  }
+  &__row {
+    grid-area: a;
+    align-self: center;
+    justify-self: center;
+    z-index: 1;
+  }
+  &__title {
+    @include fonts($colorWhite, $fontBlack, 70);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: rem(55);
+  }
+  &__subtitle {
+    @include fonts($colorWhite, $fontBold, 22);
+    line-height: rem(26);
+  }
+}
+
+@media (min-width: 992px) {
+  .main-hero {
+    &__container {
+      grid-template-columns: repeat(7, 1fr);
+      grid-template-areas:
+        '. . a a a . .'
+        '. . a a a . .';
+    }
+    &__title {
+      @include fonts($colorWhite, $fontBlack, 90);
+      line-height: rem(70);
+    }
+    &__subtitle {
+      @include fonts($colorWhite, $fontBold, 22);
+      line-height: rem(26);
+    }
+  }
+}

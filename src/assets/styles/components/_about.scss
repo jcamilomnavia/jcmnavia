@@ -1,0 +1,16 @@
+.main-about {
+  background-color: $colorDefaultText;
+  padding: 150px 0;
+  &__title {
+    @include fonts($colorDark, $fontBold, 90);
+    line-height: rem(65);
+    margin-bottom: 40px;
+  }
+  &__description {
+    @include fonts($colorDark, $fontRegular, 18);
+    line-height: rem(24);
+  }
+  &__image {
+    box-shadow: 0px 3px 6px #000000a1;
+  }
+}
