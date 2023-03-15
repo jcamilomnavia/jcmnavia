@@ -5,6 +5,22 @@
     margin-bottom: $marginGlobal;
   }
 
+  &__download {
+    align-items: flex-end;
+    color: #2e4052;
+    display: flex;
+    font-size: 17px;
+    line-height: 17px;
+    text-decoration: none;
+    margin-left: auto;
+
+    &-icons {
+      margin-right: 5px;
+      display: inline-flex;
+      flex-direction: column;
+    }
+  }
+
   &__jobs {
     margin-bottom: $marginGlobal;
 

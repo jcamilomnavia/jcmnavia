@@ -2,6 +2,9 @@ import JobCard from '@/app/components/job-card';
 import {Container, Row, Col} from 'reactstrap';
 import {motion} from 'framer-motion';
 import jobs from '@/app/assets/content/jobs';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faArrowDownLong} from '@fortawesome/free-solid-svg-icons';
+import {faHardDrive} from '@fortawesome/free-regular-svg-icons';
 
 const Work = () => {
   return (
@@ -24,6 +27,17 @@ const Work = () => {
                 THINGS <br />
                 HAPPEN
               </p>
+              <a
+                href='/files/Juan Camilo MARIN NAVIA CV.pdf'
+                className='work__download text-end'
+                download
+              >
+                <span className='work__download-icons'>
+                  <FontAwesomeIcon icon={faArrowDownLong} bounce />
+                  <FontAwesomeIcon icon={faHardDrive} />
+                </span>
+                Download CV
+              </a>
             </motion.div>
           </Col>
         </Row>
