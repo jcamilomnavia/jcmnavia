@@ -1,0 +1,17 @@
+.footer {
+  padding: 80px 0px;
+
+  &__social-icons {
+    margin-bottom: 30px;
+    a {
+      @include fonts(white, 26, 600, 26);
+      margin: 0 15px;
+    }
+  }
+
+  &__links {
+    a {
+      color: white;
+    }
+  }
+}

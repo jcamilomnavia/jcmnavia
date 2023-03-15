@@ -1,0 +1,46 @@
+.work {
+  &__intro {
+    height: 50vh;
+    background-color: $workColor;
+    margin-bottom: $marginGlobal;
+  }
+
+  &__jobs {
+    margin-bottom: $marginGlobal;
+
+    &-left {
+      background-color: #1b1b1f;
+      border-top-left-radius: $radiusGlobal;
+      border-bottom-left-radius: $radiusGlobal;
+      color: white;
+      max-height: 250px;
+      min-height: 250px;
+      overflow-y: hidden;
+      padding: 50px 10% 50px 40px;
+      width: 110%;
+      z-index: 0;
+    }
+    &-right {
+      background-color: #a5a1ff;
+      border-radius: $radiusGlobal;
+      padding: 50px 40px;
+      z-index: 1;
+    }
+
+    &-title {
+      font-weight: 700;
+    }
+    &-description {
+      font-weight: 100;
+      white-space: pre-line;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    &-place {
+      font-weight: 700;
+    }
+    &-dates {
+      font-weight: 100;
+    }
+  }
+}

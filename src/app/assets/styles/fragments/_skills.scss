@@ -1,0 +1,36 @@
+.skills {
+  &__intro {
+    height: 50vh;
+    background-color: $skillsColor;
+  }
+
+  &__list {
+    height: 50vh;
+    margin-top: $marginGlobal;
+    margin-bottom: 40px;
+  }
+}
+
+.infinite-cards {
+  width: 100%;
+  display: grid;
+  place-items: center center;
+  overflow: hidden;
+  .carde {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    border-radius: $radiusGlobal;
+    color: #fff;
+    display: grid;
+    place-items: center center;
+    padding: 10px;
+    p {
+      text-align: center;
+      font-size: 28px;
+      font-weight: 700;
+    }
+  }
+}
