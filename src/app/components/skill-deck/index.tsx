@@ -6,6 +6,10 @@ import {
   PanInfo,
 } from 'framer-motion';
 import Card, {CardType} from './card';
+import {Row} from 'reactstrap';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faHandPointer} from '@fortawesome/free-regular-svg-icons';
+import {faUpDownLeftRight} from '@fortawesome/free-solid-svg-icons';
 
 type InfiniteCardsProperties = {
   mainCards: CardType[];
@@ -44,22 +48,20 @@ const InfiniteCards: FC<InfiniteCardsProperties> = ({mainCards}) => {
   const onDirectionLock = (axis: string | null) =>
     setDragStart({...dragStart, axis: axis});
 
-  const animateCardSwipe = (index: number) => (animation: {
-    x: number;
-    y: number;
-  }) => {
-    setDragStart({...dragStart, animation});
+  const animateCardSwipe =
+    (index: number) => (animation: {x: number; y: number}) => {
+      setDragStart({...dragStart, animation});
 
-    setTimeout(() => {
-      setDragStart({axis: null, animation: {x: 0, y: 0}});
-      x.set(0);
-      y.set(0);
-      const rest = cards;
-      const initials = rest.pop();
-      // @ts-ignore
-      setCards([initials, ...rest]);
-    }, 300);
-  };
+      setTimeout(() => {
+        setDragStart({axis: null, animation: {x: 0, y: 0}});
+        x.set(0);
+        y.set(0);
+        const rest = cards;
+        const initials = rest.pop();
+        // @ts-ignore
+        setCards([initials, ...rest]);
+      }, 300);
+    };
 
   const onDragEnd = (index: number) => (info: PanInfo) => {
     if (dragStart.axis === 'x') {
@@ -72,7 +74,7 @@ const InfiniteCards: FC<InfiniteCardsProperties> = ({mainCards}) => {
   };
 
   return (
-    <div className='infinite-cards'>
+    <div className='skills__infinite-cards'>
       {cards.map((card, index) => {
         const isLast = index === cards.length - 1;
         return (
@@ -95,6 +97,16 @@ const InfiniteCards: FC<InfiniteCardsProperties> = ({mainCards}) => {
           />
         );
       })}
+      <Row className='skills__mouse'>
+        <FontAwesomeIcon
+          className='skills__mouse-expand skills__mouse-icon'
+          icon={faUpDownLeftRight}
+        />
+        <FontAwesomeIcon
+          className='skills__mouse-pointer  skills__mouse-icon'
+          icon={faHandPointer}
+        />
+      </Row>
     </div>
   );
 };

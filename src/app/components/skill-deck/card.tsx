@@ -25,7 +25,7 @@ const Card: FC<CardProperties> = ({
     drag
     layout
     dragDirectionLock
-    className='carde'
+    className='skills__card'
     dragConstraints={{left: 0, right: 0, top: 0, bottom: 0}}
     onDirectionLock={onDirectionLock}
     onDragEnd={onDragEnd}
