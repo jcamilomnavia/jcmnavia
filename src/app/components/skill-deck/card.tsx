@@ -32,10 +32,9 @@ const Card: FC<CardProperties> = ({
     animate={animate}
     style={{...style, background: card.background}}
     transition={{ease: [0.6, 0.05, -0.01, 0.9]}}
-    whileTap={{scale: 0.85}}
+    whileTap={{scale: 0.7}}
   >
     <div className='position-relative'>
-      {/* <p>{card.text}</p> */}
       <Image
         src={card.image}
         fill
