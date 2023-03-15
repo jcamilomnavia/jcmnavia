@@ -85,7 +85,6 @@ const InfiniteCards: FC<InfiniteCardsProperties> = ({mainCards}) => {
               zIndex: index,
               boxShadow,
               scale: isLast ? scale : undefined,
-              // top: !isLast ? Math.max(35 - index * 2, 2) : 0,
             }}
             onDirectionLock={(axis) => onDirectionLock(axis)}
             onDragEnd={(e, info) => onDragEnd(index)(info)}
@@ -97,7 +96,7 @@ const InfiniteCards: FC<InfiniteCardsProperties> = ({mainCards}) => {
           />
         );
       })}
-      <Row className='skills__mouse'>
+      <Row className='skills__mouse mx-0 justify-content-center'>
         <FontAwesomeIcon
           className='skills__mouse-expand skills__mouse-icon'
           icon={faUpDownLeftRight}

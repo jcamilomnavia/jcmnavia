@@ -23,7 +23,7 @@ const EducationCard: FC<EducationCardProperties> = ({
   return (
     <Col xs={12} md={12} className='education__card-col px-0'>
       <Row className='education__card mx-0 h-100'>
-        <Col className='d-flex flex-column'>
+        <Col xs={12} md={8} className='d-flex flex-column'>
           <h4 className='education__card-title'>{title}</h4>
           <p className='education__card-uni mt-auto'>{university}</p>
           <p className='education__card-place'>
@@ -31,7 +31,7 @@ const EducationCard: FC<EducationCardProperties> = ({
             {place}
           </p>
         </Col>
-        <Col xs={4} className='text-end'>
+        <Col xs={12} md={4} className='text-end'>
           <p className='education__card-dates'>{dates}</p>
           {gpa && <p className='education__card-gpa'>GPA: {gpa}</p>}
         </Col>

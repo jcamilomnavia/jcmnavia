@@ -10,19 +10,18 @@
 
     &-left {
       background-color: #1b1b1f;
+      border-top-right-radius: $radiusGlobal;
       border-top-left-radius: $radiusGlobal;
-      border-bottom-left-radius: $radiusGlobal;
       color: white;
-      max-height: 250px;
-      min-height: 250px;
-      overflow-y: hidden;
-      padding: 35px 13% 35px 35px;
-      width: 110%;
+      max-width: 100% !important;
+      padding: $paddingGlobal;
       z-index: 0;
     }
     &-right {
       background-color: #a5a1ff;
-      border-radius: $radiusGlobal;
+      border-bottom-right-radius: $radiusGlobal;
+      border-bottom-left-radius: $radiusGlobal;
+
       padding: 50px 40px;
       z-index: 1;
     }
@@ -41,6 +40,27 @@
     }
     &-dates {
       font-weight: 100;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    &__jobs {
+      margin-bottom: $marginGlobal;
+
+      &-left {
+        max-width: 110% !important;
+        border-radius: 0;
+        border-top-left-radius: $radiusGlobal;
+        border-bottom-left-radius: $radiusGlobal;
+        padding: 35px 13% 35px 35px;
+        max-height: 250px;
+        min-height: 250px;
+        width: 110%;
+      }
+
+      &-right {
+        border-radius: $radiusGlobal;
+      }
     }
   }
 }

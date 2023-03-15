@@ -19,7 +19,7 @@
       grid-column: 1 / -1;
     }
     :nth-child(n + 2) {
-      grid-column: 2 span / auto;
+      grid-column: 4 span / auto;
     }
     :nth-child(n + 4) {
       grid-column: 1 / -1;
@@ -35,11 +35,11 @@
     &-title {
       @include fonts($educationColor, 28, 100, 32);
       white-space: pre-line;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
     &-uni {
       @include fonts($educationColor, 20, 500, 24);
-      margin-bottom: 0px;
+      margin-bottom: 5px;
     }
     &-place {
       @include fonts($educationColor, 15, 600, 19);
@@ -52,6 +52,23 @@
     &-gpa {
       @include fonts($educationColor, 15, 100, 19);
       margin-bottom: 0px;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    &__card-grid {
+      :nth-child(n + 2) {
+        grid-column: 2 span / auto;
+      }
+      :nth-child(n + 4) {
+        grid-column: 1 / -1;
+      }
+    }
+
+    &__card {
+      &-title {
+        margin-bottom: 20px;
+      }
     }
   }
 }

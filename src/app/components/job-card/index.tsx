@@ -20,7 +20,7 @@ const JobCard: FC<JobCardProperties> = ({
 }) => {
   return (
     <Row className='work__jobs'>
-      <Col xs={12} md={6} className='position-relative ps-0'>
+      <Col xs={12} md={6} className='position-relative px-0 ps-md-0'>
         <motion.div
           className='work__jobs-left'
           initial={{x: '50%', width: '100%'}}

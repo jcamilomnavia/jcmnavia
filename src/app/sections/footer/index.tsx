@@ -16,7 +16,11 @@ const Footer = () => {
     <footer className='footer'>
       <Container>
         <Row className='footer__social'>
-          <Col className='footer__social-icons text-center'>
+          <Col
+            xs={12}
+            md={6}
+            className='footer__social-icons text-center text-md-end px-0'
+          >
             <a href='https://github.com/jcamilomnavia'>
               <FontAwesomeIcon icon={faGithub} color='white' />
             </a>
@@ -26,6 +30,12 @@ const Footer = () => {
             <a href='https://gitlab.com/jcmnavia'>
               <FontAwesomeIcon icon={faGitlab} color='white' />
             </a>
+          </Col>
+          <Col
+            xs={12}
+            md={6}
+            className='footer__social-icons text-center text-md-start px-0'
+          >
             <a href='https://discord.com/users/jcmnavia#0162'>
               <FontAwesomeIcon icon={faDiscord} color='white' />
             </a>
